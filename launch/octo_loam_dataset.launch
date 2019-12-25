@@ -7,7 +7,7 @@
   <!-- Load loam launch -->
   <include file="/home/zs/LOAM/src/loam_velodyne/launch/loam_velodyne.launch" />
 
-  <!-- Load omtb launch -->
+  <!-- Load dataset -->
   <node pkg="rosbag" type="play" name="playe" output="screen" args="--clock /home/zs/2017-06-08-15-49-45_0.bag "/>
 
   <node name="publish_pointcloud" pkg="publish_pointcloud" type="publish_pointcloud">
