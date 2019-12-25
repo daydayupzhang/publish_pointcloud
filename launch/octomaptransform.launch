@@ -16,7 +16,8 @@
     <param name="pointcloud_min_z" value="0" />
 
     <!-- topic from where pointcloud2 messages are subscribed -->
-    <remap from="/cloud_in" to="/pointcloud/output" />
- 
+    <!-- <remap from="/cloud_in" to="/laser_cloud_surround_modify" /> -->
+    <remap from="/cloud_in" to="/laser_cloud_surround_modify" />
   </node>
 </launch>
+ 
